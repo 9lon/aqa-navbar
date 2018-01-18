@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>aqa-navbar demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../aqa-navbar.html">
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+
+    </style>
+  </custom-style>
+</head>
+
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic aqa-navbar demo</h3>
+    <demo-snippet>
+      <template>
+        <aqa-navbar id="menu" path="/tests">
+          <div path="/tests" label="จัดการแอปพลิเคชัน"></div>
+          <div path="/role" label="จัดการประเภทผู้ใช้งาน"></div>
+        </aqa-navbar>
+        <script>
+          document.getElementById('menu').query = { id: '1', name: 's' }
+        </script>
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+
+</html>
