@@ -107,7 +107,10 @@
           if (obj.hasOwnProperty(p)) {
             str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
           }
-        this.queryString = '?' + str.join("&");
+        if (this.queryString != "") {
+          this.queryString = '?' + str.join("&");
+        }
+
       }
     }
 
