@@ -7,18 +7,21 @@
 
   <title>aqa-navbar demo</title>
 
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
 
-  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-  <link rel="import" href="../aqa-navbar.html">
+  <script type="module">
+    import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+    import '@polymer/iron-demo-helpers/demo-snippet';
+  </script>
 
   <custom-style>
     <style is="custom-style" include="demo-pages-shared-styles">
-
     </style>
   </custom-style>
 </head>
+
+
+<script type="module" src="../aqa-navbar.js"></script>
 
 <body>
   <div class="vertical-section-container centered">
